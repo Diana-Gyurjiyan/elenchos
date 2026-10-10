@@ -1,0 +1,22 @@
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: elenchos-db   # fixed, own name
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-argmap}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-argmap}
+      POSTGRES_DB: ${POSTGRES_DB:-argmap}
+    ports:
+      - "${POSTGRES_PORT:-5433}:5432"
+    volumes:
+      - elenchos-pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-argmap} -d ${POSTGRES_DB:-argmap}"]
+      interval: 3s
+      timeout: 3s
+      retries: 20
+
+volumes:
+  elenchos-pgdata:
+    name: elenchos-pgdata

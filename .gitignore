@@ -1,0 +1,15 @@
+.env
+node_modules/
+dist/
+.venv/
+.idea/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+*.zip
+/backend/.venv/
+/backend/.pytest_cache/
+/backend/.ruff_cache/
+/backend/__pycache__/
+/frontend/node_modules/
+/frontend/dist/

@@ -1,0 +1,105 @@
+{
+ "lab": [
+  {
+   "id": "mp",
+   "prem": [
+    "P → Q",
+    "P"
+   ],
+   "concl": "Q"
+  },
+  {
+   "id": "ac",
+   "prem": [
+    "Regen → NatteStraat",
+    "NatteStraat"
+   ],
+   "concl": "Regen"
+  },
+  {
+   "id": "enth",
+   "prem": [
+    "Regen"
+   ],
+   "concl": "NatteStraat"
+  },
+  {
+   "id": "soc",
+   "prem": [
+    "∀x (Mens(x) → Sterfelijk(x))",
+    "Mens(socrates)"
+   ],
+   "concl": "Sterfelijk(socrates)"
+  },
+  {
+   "id": "shift",
+   "prem": [
+    "∀x ∃y Houdt_van(x, y)"
+   ],
+   "concl": "∃y ∀x Houdt_van(x, y)"
+  },
+  {
+   "id": "import",
+   "prem": [
+    "∀x (Eenhoorn(x) → Magisch(x))",
+    "∀x (Magisch(x) → Zeldzaam(x))"
+   ],
+   "concl": "∃x (Eenhoorn(x) ∧ Zeldzaam(x))"
+  },
+  {
+   "id": "incons",
+   "prem": [
+    "P → Q",
+    "P",
+    "¬Q"
+   ],
+   "concl": "R"
+  }
+ ],
+ "map": [
+  {
+   "id": "anselm",
+   "title": {
+    "nl": "Anselmus: ontologisch godsbewijs",
+    "en": "Anselm: ontological argument"
+   },
+   "text": {
+    "nl": "God is per definitie datgene waarboven niets groters gedacht kan worden. Stel dat God alleen in het verstand bestaat. Dan kunnen we iets groters denken: een wezen dat ook in de werkelijkheid bestaat. Maar dat is in strijd met de definitie, want boven God kan niets groters gedacht worden. Dus God bestaat niet alleen in het verstand, maar ook in de werkelijkheid.",
+    "en": "God is, by definition, that than which nothing greater can be conceived. Suppose God exists only in the mind. Then we could conceive of something greater: a being that also exists in reality. But that contradicts the definition, since nothing greater than God can be conceived. So God exists not only in the mind but also in reality."
+   }
+  },
+  {
+   "id": "oped",
+   "title": {
+    "nl": "Opiniestuk met drogredenen",
+    "en": "Op-ed with fallacies"
+   },
+   "text": {
+    "nl": "Elke succesvolle ondernemer die ik ken staat om vijf uur op. Dus als je om vijf uur opstaat, word je succesvol. Critici van vroeg opstaan zijn gewoon luie mensen die hun tijd niet kunnen indelen, dus hun bezwaren hoeven we niet serieus te nemen. Omdat vroeg opstaan zo goed werkt, moeten scholen om zes uur beginnen. Wie daar tegen is, wil dat onze kinderen achterblijven.",
+    "en": "Every successful entrepreneur I know gets up at five. So if you get up at five, you will become successful. Critics of early rising are just lazy people who cannot manage their time, so we need not take their objections seriously. Because early rising works so well, schools should start at six. Anyone against that wants our children to fall behind."
+   }
+  },
+  {
+   "id": "shift",
+   "title": {
+    "nl": "Iedereen heeft een moeder",
+    "en": "Everyone has a mother"
+   },
+   "text": {
+    "nl": "Iedereen heeft een moeder. Dus er is iemand die de moeder is van iedereen.",
+    "en": "Everybody has a mother. Therefore there is someone who is the mother of everybody."
+   }
+  },
+  {
+   "id": "umbrella",
+   "title": {
+    "nl": "Paraplu (verborgen aanname)",
+    "en": "Umbrella (hidden assumption)"
+   },
+   "text": {
+    "nl": "Het heeft vannacht geregend, dus de straat is nat. Als de straat nat is, is er kans op uitglijden. Daarom moeten we vanochtend de lessen annuleren.",
+    "en": "It rained last night, so the street is wet. If the street is wet, there is a risk of slipping. Therefore we must cancel the lessons this morning."
+   }
+  }
+ ]
+}
